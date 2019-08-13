@@ -1,3 +1,8 @@
+@font-face{
+    src: url(fonts/Lobster-Regula.tff);
+    font-family: 'Lobster', cursive;
+}
+
 h1 a, h2 a{
     color: #c25100;
     font-family: 'Lobster';
@@ -49,6 +54,7 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+    width: 100%;
 }
 
 .post h2 a, .post h2 a:visited {

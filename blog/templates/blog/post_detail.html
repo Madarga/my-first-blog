@@ -1,11 +1,15 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if user.is_authenticating %}
-            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        {% endif %}
-        <h2>{{ post.title }}</a></h2>
+    <div class="post w-100">
+        <div class="row">
+            <div class="col-sm-1">
+                <h2>{{ post.title }}</a></h2>
+            </div>
+            <div class="col-sm-1">
+                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            </div>
+        </div>
         {% if post.published_date %}
             <div class="date">
                 <p>published: {{ post.published_date }}</p>
@@ -13,4 +17,4 @@
         {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
-{% endblock %}             
+{% endblock %}        
