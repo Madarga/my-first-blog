@@ -1,13 +1,13 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post w-100">
+    <div class="post">
         <div class="row">
-            <div class="col-sm-1">
+            <div class="col-lg-9 pr-0">
                 <h2>{{ post.title }}</a></h2>
             </div>
-            <div class="col-sm-1">
-                <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <div class="col-lg-3">
+                <a class="btn" id="edit-btn" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil" id="pencil-btn"></span></a>
             </div>
         </div>
         {% if post.published_date %}

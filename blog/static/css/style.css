@@ -1,15 +1,9 @@
-@font-face{
-    src: url(fonts/Lobster-Regula.tff);
-    font-family: 'Lobster', cursive;
-}
-
 h1 a, h2 a{
     color: #c25100;
-    font-family: 'Lobster';
 }
 
-body{
-    padding-left: 15px;
+.col-md-8{
+    margin-left: 40px;
 }
 
 .page-header {
@@ -25,7 +19,7 @@ body{
 }
 
 .content {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 h1, h2, h3, h4 {
@@ -59,4 +53,19 @@ h1, h2, h3, h4 {
 
 .post h2 a, .post h2 a:visited {
     color: #000000;
+}
+
+#pencil-btn{
+    color: black;
+    float: right;
+    font-size: 30px;
+}
+
+#edit-btn{
+    padding-top: 18px;
+    height: 65px;
+}
+
+.col-lg-3{
+    padding-left: 250px;
 }
